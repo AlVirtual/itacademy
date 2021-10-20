@@ -1,0 +1,161 @@
+body{
+	overflow: hidden;
+}
+
+h1{
+	font-family: "Lato";
+	color: white;
+	font-size: 3em;
+	font-weight: 100;
+}
+
+.container{
+	display: inline-flex;
+	width: 100%;
+    height: 100vh;
+}
+
+.content{
+	display: inline-flex;
+	width: 100%;
+	justify-content: center;
+    height: 100vh;
+}
+
+.content > div:first-child{
+	display: inline-flex;
+	width: 19%;
+	justify-content: center;
+	align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    position: absolute;
+ }
+
+
+/*-------Plano obliquo transparente---------*/
+
+.content > div:first-child::before{
+	display: block;
+	content: '';
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+	background-color: aliceblue;
+	position: absolute;
+	opacity:0.1 ;
+    -webkit-transform-origin: center center;
+          transform-origin: center center;
+    -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+          transform: skew(30deg) scaleY(1) translate(0, 0);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+ }
+
+
+/*-------Transicion Hover del plano obliquo transparente---------*/
+
+.content > div:first-child:hover:before{
+    display: block;
+	content: '';
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+	background-color: aliceblue;
+	position: absolute;
+	opacity:0.1 ;
+    -webkit-transform-origin: center center;
+          transform-origin: center center;
+    -webkit-transform: skew(0deg) scaleY(1) translate(0, 0);
+          transform: skew(0deg) scaleY(1) translate(0, 0);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); 
+}
+
+
+/*-----------Animacion boxIT------------*/
+
+@keyframes intro1 {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes intro1 {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.content .boxIT {
+    background-color: #244F75;
+    -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+    -webkit-animation-name: intro1;
+          animation-name: intro1;
+    -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+/*-----------Fin Animacion boxIT------------*/
+
+/*-----------Animacion boxA------------*/
+
+@-webkit-keyframes intro2 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes intro2 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.content .boxA{
+    background-color: #60BFBF;
+    -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+    -webkit-animation-name: intro2;
+          animation-name: intro2;
+    -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+/*-----------Fin Animacion boxA------------*/
+
+
+
+.boxCA{
+    background-color: #8C4B7E;
+ }
+
+.boxDE{
+    background-color: #F8BB44;
+}
+
+.boxDE{
+    background-color: #F8BB44;
+}
+
+.boxMY{
+    background-color: #F24B4B;
+}
+
+
