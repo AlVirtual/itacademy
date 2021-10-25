@@ -1,11 +1,8 @@
-body{
-	overflow: hidden;
-}
 
 h1{
-	font-family: "Lato";
+	font-family: "Lato", serif;
 	color: white;
-	font-size: 3em;
+	font-size: 4em;
 	font-weight: 100;
 }
 
@@ -24,7 +21,7 @@ h1{
 
 .content > div:first-child{
 	display: inline-flex;
-	width: 19%;
+	width: 20%;
 	justify-content: center;
 	align-items: center;
     overflow: hidden;
@@ -71,9 +68,9 @@ h1{
 }
 
 
-/*-----------Animacion boxIT------------*/
+/*-----------Animación boxIT------------*/
 
-@keyframes intro1 {
+@keyframes introIT {
   0% {
     -webkit-transform: translate3d(-100%, 0, 0);
             transform: translate3d(-100%, 0, 0);
@@ -83,7 +80,7 @@ h1{
             transform: translate3d(0, 0, 0);
   }
 }
-@-webkit-keyframes intro1 {
+@-webkit-keyframes introIT {
   0% {
     -webkit-transform: translate3d(-100%, 0, 0);
             transform: translate3d(-100%, 0, 0);
@@ -94,20 +91,28 @@ h1{
   }
 }
 
-.content .boxIT {
+.boxIT {
     background-color: #244F75;
     -webkit-transform: translate3d(-100%, 0, 0);
-          transform: translate3d(-100%, 0, 0);
-    -webkit-animation-name: intro1;
-          animation-name: intro1;
+            transform: translate3d(-100%, 0, 0);
+    -webkit-animation-name: introIT;
+            animation-name: introIT;
     -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+            animation-delay: 0.1s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+            animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
 }
-/*-----------Fin Animacion boxIT------------*/
+/*-----------Fin Animación boxIT------------*/
 
-/*-----------Animacion boxA------------*/
 
-@-webkit-keyframes intro2 {
+/*-----------Animación boxA------------*/
+
+
+@keyframes introA {
   0% {
     -webkit-transform: translate3d(0, 100%, 0);
             transform: translate3d(0, 100%, 0);
@@ -117,7 +122,8 @@ h1{
             transform: translate3d(0, 0, 0);
   }
 }
-@keyframes intro2 {
+
+@-webkit-keyframes introA {
   0% {
     -webkit-transform: translate3d(0, 100%, 0);
             transform: translate3d(0, 100%, 0);
@@ -128,34 +134,155 @@ h1{
   }
 }
 
-.content .boxA{
+.boxA{
     background-color: #60BFBF;
     -webkit-transform: translate3d(0, 100%, 0);
-          transform: translate3d(0, 100%, 0);
-    -webkit-animation-name: intro2;
-          animation-name: intro2;
+            transform: translate3d(0, 100%, 0);
+    -webkit-animation-name: introA;
+            animation-name: introA;
     -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+            animation-delay: 0.2s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+            animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
 }
 
-/*-----------Fin Animacion boxA------------*/
+/*-----------Fin Animación boxA------------*/
 
+
+/*-----------Animación boxCA---------------*/
+
+@keyframes introCA {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes introCA {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
 
 
 .boxCA{
     background-color: #8C4B7E;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    -webkit-animation-name: introCA;
+            animation-name: introCA;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+            animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;   
  }
 
-.boxDE{
-    background-color: #F8BB44;
+/*-----------Fin Animación boxCA------------*/
+
+
+/*-----------Animación boxDE---------------*/
+
+@keyframes introDE {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
 }
+
+@-webkit-keyframes introDE {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
 
 .boxDE{
     background-color: #F8BB44;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    -webkit-animation-name: introDE;
+            animation-name: introDE;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+            animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;    
+    
 }
+
+/*-----------Fin Animación boxDE------------*/
+
+
+/*-----------Animación boxMY---------------*/
+
+@keyframes introMY {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes introMY {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
 
 .boxMY{
     background-color: #F24B4B;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    -webkit-animation-name: introMY;
+            animation-name: introMY;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+            animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
 }
+
+/*-----------Fin Animación boxMY---------------*/
 
 
